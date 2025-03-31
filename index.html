@@ -1,0 +1,74 @@
+<!-- Author M.A. Jahangeer Pasha -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Trie Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Trie Operations</h1>
+    </header>
+    <main>
+        <!-- Upload Words from File -->
+        <section class="card">
+            <h2>Upload Words</h2>
+            <input type="file" id="fileInput" accept=".txt">
+            <button id="uploadBtn" class="primary-btn">Upload</button>
+            <p id="fileAddResult" class="result"></p>
+        </section>
+
+        <!-- Add a Word -->
+        <section class="card">
+            <h2>Add a Word</h2>
+            <input type="text" id="wordInput" placeholder="Enter a word to add">
+            <button id="addWordBtn" class="primary-btn">Add</button>
+            <p id="addResult" class="result"></p>
+        </section>
+
+        <!-- Search and Delete -->
+        <section class="card">
+            <h2>Search/Delete a Word</h2>
+            <input type="text" id="searchInput" placeholder="Enter a word">
+            <button id="searchBtn" class="secondary-btn">Search</button>
+            <button id="deleteWordBtn" class="danger-btn">Delete</button>
+            <p id="searchResult" class="result"></p>
+        </section>
+
+        <!-- Autocomplete -->
+        <section class="card">
+            <h2>Autocomplete</h2>
+            <input type="text" id="autocompleteInput" placeholder="Start typing...">
+            <ul id="suggestionsList"></ul>
+        </section>
+
+        <!-- Save and Load State -->
+        <section class="card">
+            <h2>Save/Load Trie</h2>
+            <button id="saveTrieBtn" class="primary-btn">Save Trie (TXT)</button>
+            <input type="file" id="loadTrieBtn" accept=".txt">
+        </section>
+
+        <!-- Reset -->
+        <section class="card">
+            <h2>Reset Trie</h2>
+            <button id="resetBtn" class="secondary-btn">Reset Trie</button>
+            <p id="resetResult" class="result"></p>
+        </section>
+
+        <!-- Leaderboard -->
+        <section class="card">
+            <h2>Top Words Leaderboard</h2>
+            <button id="leaderboardBtn" class="primary-btn">Show Leaderboard</button>
+            <ul id="leaderboardList"></ul>
+        </section>
+    </main>
+    <!-- <footer>
+        <p>Trie Operations © 2025</p>
+        <button id="themeToggleBtn" class="secondary-btn">Toggle Theme</button>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Card Section Styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #4caf50;
+    font-size: 1.8rem;
+}
+
+/* Input and Button Styling */
+input[type="text"], input[type="file"] {
+    width: calc(100% - 1.2rem);
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Variants */
+.primary-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #45a049;
+}
+
+.secondary-btn {
+    background-color: #2196f3;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #1976d2;
+}
+
+.danger-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.danger-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Suggestions and Leaderboard Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.7rem;
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Result Text Styling */
+.result {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Dark Theme Styling */
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme header {
+    background-color: #222;
+}
+
+body.dark-theme .card {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme button {
+    color: white;
+}
+
+body.dark-theme .primary-btn {
+    background-color: #81c784;
+}
+
+body.dark-theme .secondary-btn {
+    background-color: #64b5f6;
+}
+
+body.dark-theme .danger-btn {
+    background-color: #e57373;
+}
+
+body.dark-theme li {
+    background-color: #555;
+    color: white;
+}
